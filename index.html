@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
+
 <body>
-    <div id="app">
-        <h1>{{titulo}} </h1>
+    <div class="container mt-5" id="app">
+        <h1>{{titulo}}</h1>
+        <br><br>
+            <div class="mb-3">
+                <label for="radio" class="form-label">Escribir el radio:</label>
+                <input type="number" class="form-control" id="radio" aria-describedby="radio" v-model="radio">
+                <div id="radio" class="form-text">El radio de un círculo en metros.</div>
+            </div>
+            <a href="" class="btn btn-danger">Borrar</a>
+        <br><br>
+        <h1 class="text-center">Área: {{CalcularAreaCirculo}}</h1>
+        <h1 class="text-center">Perímetro: {{CalcularPerimetro}}</h1>
     </div>
 
     <!-- development version, includes helpful console warnings -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-<script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js.js"></script>
 </body>
+
 </html>
