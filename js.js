@@ -3,6 +3,7 @@ const app = new Vue({
     data: {
         titulo: "Calculando el Área y Perímetro de un círculo con Vue.js",
         radio: "",
+        pie : "@ Tecnicas De Programacion De Internet 2021",
     },
     computed: {
         CalcularAreaCirculo: function () {

@@ -23,13 +23,14 @@
         <br><br>
             <div class="mb-3">
                 <label for="radio" class="form-label">Escribir el radio:</label>
-                <input type="number" class="form-control" id="radio" aria-describedby="radio" v-model="radio">
+                <input type="number" class="form-control" id="radio" aria-describedby="radio" v-model="radio" placeholder="Por Ejemplo 5">
                 <div id="radio" class="form-text">El radio de un círculo en metros.</div>
             </div>
             <a href="" class="btn btn-danger">Borrar</a>
         <br><br>
         <h1 class="text-center">Área: {{CalcularAreaCirculo}}</h1>
         <h1 class="text-center">Perímetro: {{CalcularPerimetro}}</h1>
+        <span>{{pie}}</span>
     </div>
 
     <!-- development version, includes helpful console warnings -->
