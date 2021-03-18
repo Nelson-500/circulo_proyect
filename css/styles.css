@@ -1,0 +1,17 @@
+.container {
+  display: block;
+  background-color: rgba(0, 22, 22, 0.014);
+  text-align: center;
+  font-family: Fjalla One, sans-serif;
+}
+.container-all {
+  background-size: 1400px;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  color: white;
+}
+
+.img-container {
+  width: 150px;
+  height: 150px;
+}

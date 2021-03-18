@@ -6,25 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="img/logo-cálculo-1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
 </head>
 
-<body class="bod">
+<body class="container-all" background="img/istockphoto-1190096740-170667a.jpg">
     <div class="container mt-5" id="app">
         <h1>{{titulo}}</h1>
         <br><br>
+        <figure class="container-img">
+            <img  class="img-container"  src="img/mate.jpg" alt="">
+        </figure>
             <div class="mb-3">
                 <label for="radio" class="form-label">Escribir el radio:</label>
-                <input type="number" class="form-control" id="radio" aria-describedby="radio" v-model="radio">
+                <input type="number" class="form-control" id="radio" aria-describedby="radio" v-model="radio" placeholder="Por Ejemplo 5">
                 <div id="radio" class="form-text">El radio de un círculo en metros.</div>
             </div>
             <a href="" class="btn btn-danger">Borrar</a>
         <br><br>
         <h1 class="text-center">Área: {{CalcularAreaCirculo}}</h1>
         <h1 class="text-center">Perímetro: {{CalcularPerimetro}}</h1>
+        <span>{{pie}}</span>
     </div>
 
     <!-- development version, includes helpful console warnings -->
